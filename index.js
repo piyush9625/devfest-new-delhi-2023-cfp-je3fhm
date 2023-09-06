@@ -4,7 +4,7 @@ import salt from './env/secret';
 
 function encryptString(str) {
   let encryptedStr = '';
-  for (let i = 0; i <= str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     encryptedStr += String.fromCharCode(str.charCodeAt(i) + 2);
   }
   return encryptedStr;
